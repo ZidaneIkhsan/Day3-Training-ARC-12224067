@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager & Cuaca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Task Manager & Cuaca</h1>
+
+    <div class="container">
+        <div class="box">
+            <h2>Daftar Tugas</h2>
+            <input type="text" id="taskInput" placeholder="Tambahkan tugas">
+            <button onclick="addTask()">Tambah</button>
+            <ul id="taskList"></ul>
+        </div>
+
+        <div class="box">
+            <h2>Cek Cuaca</h2>
+            <input type="text" id="cityInput" placeholder="Masukkan kota">
+            <button onclick="getWeather()">Cek Cuaca</button>
+            <p id="loading" class="hidden">🔄 Mengambil data...</p>
+            <p id="weatherResult"></p>
+            <img id="weatherIcon" class="hidden" alt="Weather Icon">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
